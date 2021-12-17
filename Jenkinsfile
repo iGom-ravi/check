@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage ('Build docker image') {
       steps {
-        sh "docker build -t jenkinstraining.azurecr.io/sample-docker-image-63998:$BUILD_NUMBER ."
+        sh "docker build -t jenkinstraining.azurecr.io/sample-docker-image-66367:$BUILD_NUMBER ."
       }
     }
     stage ('Push docker image to container registry') {
